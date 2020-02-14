@@ -11,7 +11,7 @@ public class dbcon {
 	private static PreparedStatement pstmt = null;
 	private static String DBUSER = "root"; //assigned username
 	private static String DBPASS = "UAFSdata1"; //assigned password
-	private static String url 	 = "jdbc:mariadb://74.117.171.123:22/ARStudentHub"; //driver :// host : port : database
+	private static String url 	 = "jdbc:mariadb://74.117.171.123:22/ARStudentHub?sessionVariables=max_statement_time=10"; //driver :// host : port : database
 	                                    //74.117.171.123
 	public boolean checkAuth() {
         boolean result = false;
