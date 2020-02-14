@@ -1,5 +1,6 @@
 {
-    "maven.view": "hierarchical",
-    "java.dependency.syncWithFolderExplorer": true,
-    "java.dependency.packagePresentation": "hierarchical"
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\madidaye\\OneDrive\\Spring 2020 UAFS\\Capstone\\A&R STUDENT HUB\\mariadb-java-client-2.5.4.jar"
+    ]
 }
