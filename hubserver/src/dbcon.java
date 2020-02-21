@@ -11,12 +11,12 @@ public class dbcon {
 	private static PreparedStatement pstmt = null;
 	private static String DBUSER = "root"; //assigned username
 	private static String DBPASS = "UAFSdata1"; //assigned password
-	private static String url 	 = "jdbc:mariadb://74.117.171.123:22/ARStudentHub?sessionVariables=max_statement_time=10"; //driver :// host : port : database
+	private static String url 	 = "jdbc:mysql://74.117.171.123:3306/ARStudentHub"; //driver :// host : port / database
 	                                    //74.117.171.123
 	public boolean checkAuth() {
         boolean result = false;
         String val = null;
-        String sql = "DESC SECTION";
+        String sql = "SHOW TABLES;";
 
         try {
             // Class.forName("mariadb-java-client-2.5.4");
@@ -30,6 +30,7 @@ public class dbcon {
         // EXECUTION
         try {
             con = DriverManager.getConnection(url, DBUSER, DBPASS);
+            // con = DriverManager.getConnection("jdbc:mysql://74.117.171.123:3306/ARStudentHub?user=root&password=UAFSdata1");
             pstmt = con.prepareStatement(sql);
             rs = pstmt.executeQuery();
 
