@@ -278,89 +278,266 @@
         </div>
         <!--/.row-->
 
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-lg-9 col-md-12">
           </div>
           <div class="col-md-3">
           </div>
+        </div> -->
+        <div id="profile" class="tab-pane">
+          <section class="panel">
+            <div class="bio-graph-heading">
+              <h1>Dashboard</h1>
+            </div>
+            <div class="panel-body bio-graph-info">
+              <h1>Welcome, Student User!</h1>
+              <div class="row">
+                <!-- <div class="bio-row">
+                  <p><span>First Name: </span> Jenifer </p>
+                </div>
+                <div class="bio-row">
+                  <p><span>Last Name: </span> Smith</p>
+                </div> -->
+                <div class="bio-row">
+                  <p><span>Register:</span>27 October 2020</p>
+                </div>
+                <div class="bio-row">
+                  <p><span></span></p>
+                </div>
+                <div class="bio-row">
+                  <p><span>Advisor: </span> Professor</p>
+                </div>
+                <div class="bio-row">
+                  <p><span>Email: </span>professor@mailname.com</p>
+                </div>
+                <div class="bio-row">
+                  <p><span>Office: </span> BD110</p>
+                </div>
+                <div class="bio-row">
+                  <p><span>Phone: </span> (+123) 456-7890</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="row">
+            </div>
+          </section>
         </div>
 
+                  <div class="col-md-8" >
+                    <div class="panel panel-default">
+                      <div class="panel-body progress-panel">
+                        <div class="row">
+                          <div class="col-lg-8 task-progress pull-left">
+                            <h1>Current Classes</h1>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel-body">
+                        <table class="table bootstrap-datatable countries">
+                          <thead>
+                            <tr>
+                              <th>Course</th>
+                              <th>Instructor</th>
+                              <th>Day/Time</th>
+                              <th>Grade Percentage</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Programming I</td>
+                              <td>G. Fulenwider</td>
+                              <td>MW 9-10:50</td>
+                              <td>
+                                <div class="progress thin progress-striped">
+                                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                  </div>
+                                </div>
+                                <span class="sr-only">20%</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Database Systems I</td>
+                              <td>J. Renwick</td>
+                              <td>MWF 11-11:50</td>
+                              <td>
+                                <div class="progress thin progress-striped">
+                                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100" style="width: 57%">
+                                  </div>
+                                </div>
+                                <span class="sr-only">57%</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Discrete Methods</td>
+                              <td>Staff</td>
+                              <td>TR 9:30-10:45</td>
+                              <td>
+                                <div class="progress thin progress-striped">
+                                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100" style="width: 93%">
+                                  </div>
+                                </div>
+                                <span class="sr-only">93%</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Foundations of Networking</td>
+                              <td>B. Henehan</td>
+                              <td>TR 2-3:15</td>
+                              <td>
+                                <div class="progress thin progress-striped">
+                                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                                  </div>
+                                </div>
+                                <span class="sr-only">20%</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Operating Systems I</td>
+                              <td>K. Smith</td>
+                              <td>TR 5:25-6:40</td>
+                              <td>
+                                <div class="progress thin progress-striped">
+                                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100" style="width: 73%">
+                                  </div>
+                                </div>
+                                <span class="sr-only">73%</span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </div>
+                  </div>
+                </div>
 
+              <!-- project team & activity start -->
+               <div style="display:inline;">
+                <div class="col-md-4" >
+                  <!--Project Activity start-->
+                  <section class="panel">
+                    <div class="panel-body progress-panel">
+                      <div class="row">
+                        <div class="col-md-8 task-progress pull-left">
+                          <h1>Upcoming Assignments</h1>
+                        </div>
+                      </div>
+                    </div>
+                    <table class="table table-hover personal-task" >
+                      <tbody>
+                        <tr>
+                          <td>Today</td>
+                          <td>
+                            Web Design
+                          </td>
+                          <td>
+                            <span class="badge bg-important">Upload</span>
+                          </td>
 
-        <!-- project team & activity start -->
-          <div class="col-md-6 portlets">
-            <!--Project Activity start-->
-            <section class="panel">
+                        </tr>
+                        <tr>
+                          <td>Yesterday</td>
+                          <td>
+                            Project Design Task
+                          </td>
+                          <td>
+                            <span class="badge bg-success">Task</span>
+                          </td>
+
+                        </tr>
+                        <tr>
+                          <td>Last week</td>
+                          <td>
+                            Project Release Date
+                          </td>
+                          <td>
+                            <span class="badge bg-primary">To-Do</span>
+                          </td>
+
+                        </tr>
+                        <tr>
+                          <td>Last Month</td>
+                          <td>
+                            Project Release Date
+                          </td>
+                          <td>
+                            <span class="badge bg-success">To-Do</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Today</td>
+                          <td>
+                            Web Design
+                          </td>
+                          <td>
+                            <span class="badge bg-important">Upload</span>
+                          </td>
+
+                        </tr>
+                        <tr>
+                          <td>Yesterday</td>
+                          <td>
+                            Project Design Task
+                          </td>
+                          <td>
+                            <span class="badge bg-success">Task</span>
+                          </td>
+
+                        </tr>
+                        <tr>
+                          <td>Last week</td>
+                          <td>
+                            Project Release Date
+                          </td>
+                          <td>
+                            <span class="badge bg-primary">To-Do</span>
+                          </td>
+
+                        </tr>
+                        <tr>
+                          <td>Last Month</td>
+                          <td>
+                            Project Release Date
+                          </td>
+                          <td>
+                            <span class="badge bg-success">To-Do</span>
+                          </td>
+                        </tr>
+                        <!-- <tr>
+                          <td>Last Month</td>
+                          <td>
+                            Project Release Date
+                          </td>
+                          <td>
+                            <span class="badge bg-success">To-Do</span>
+                          </td>
+                        </tr> -->
+
+                      </tbody>
+                    </table>
+                  </section>
+                  <!--Project Activity end-->
+                    </div>
+                  </div>
+        <div class="row" >
+          <div class="col-md-9 ">
+            <div class="panel panel-default">
               <div class="panel-body progress-panel">
                 <div class="row">
-                  <div class="col-lg-8 task-progress pull-left">
-                    <h1>Upcoming Assignments</h1>
+                  <div class="col-lg-6 task-progress pull-left">
+                    <h1>Calendar</h1>
                   </div>
                 </div>
               </div>
-              <table class="table table-hover personal-task">
-                <tbody>
-                  <tr>
-                    <td>Today</td>
-                    <td>
-                      Web Design
-                    </td>
-                    <td>
-                      <span class="badge bg-important">Upload</span>
-                    </td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>Yesterday</td>
-                    <td>
-                      Project Design Task
-                    </td>
-                    <td>
-                      <span class="badge bg-success">Task</span>
-                    </td>
-                    <td>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Last week</td>
-                    <td>
-                      Project Release Date
-                    </td>
-                    <td>
-                      <span class="badge bg-primary">To-Do</span>
-                    </td>
-                    <td>
-
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Last Month</td>
-                    <td>
-                      Project Release Date
-                    </td>
-                    <td>
-                      <span class="badge bg-success">To-Do</span>
-                    </td>
-                    <td>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </section>
-            <!--Project Activity end-->
-              </div>
-
-        <div class="row">
-          <div class="col-md-6 portlets">
-            <div class="panel panel-default">
-              <div class="panel-heading">
+              <!-- <div class="panel-heading">
                 <h2><strong>Calendar</strong></h2>
                 <div class="panel-actions">
                   <a href="#" class="wminimize"><i class="fa fa-chevron-up"></i></a>
                   <a href="#" class="wclose"><i class="fa fa-times"></i></a>
                 </div>
 
-              </div><br><br><br>
+              </div> -->
+              <br><br><br>
               <div class="panel-body">
                 <!-- Widget content -->
 
@@ -370,97 +547,13 @@
             </div>
           </div>
         </div>
+
+
+
+
         <!-- project team & activity end -->
         <!-- Today status end -->
 
-        <div class="row">
-          <div class="col-md-12">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h2><i class="fa fa-flag-o red"></i><strong>Current Classes</strong></h2>
-                <div class="panel-actions">
-                  <a href="index.html#" class="btn-setting"><i class="fa fa-rotate-right"></i></a>
-                  <a href="index.html#" class="btn-minimize"><i class="fa fa-chevron-up"></i></a>
-                  <a href="index.html#" class="btn-close"><i class="fa fa-times"></i></a>
-                </div>
-              </div>
-              <div class="panel-body">
-                <table class="table bootstrap-datatable countries">
-                  <thead>
-                    <tr>
-                      <th>Course</th>
-                      <th>Instructor</th>
-                      <th>Day/Time</th>
-                      <th>Grade Percentage</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Programming I</td>
-                      <td>G. Fulenwider</td>
-                      <td>MW 9-10:50</td>
-                      <td>
-                        <div class="progress thin progress-striped">
-                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                          </div>
-                        </div>
-                        <span class="sr-only">20%</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Database Systems I</td>
-                      <td>J. Renwick</td>
-                      <td>MWF 11-11:50</td>
-                      <td>
-                        <div class="progress thin progress-striped">
-                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100" style="width: 57%">
-                          </div>
-                        </div>
-                        <span class="sr-only">57%</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Discrete Methods</td>
-                      <td>Staff</td>
-                      <td>TR 9:30-10:45</td>
-                      <td>
-                        <div class="progress thin progress-striped">
-                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100" style="width: 93%">
-                          </div>
-                        </div>
-                        <span class="sr-only">93%</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Foundations of Networking</td>
-                      <td>B. Henehan</td>
-                      <td>TR 2-3:15</td>
-                      <td>
-                        <div class="progress thin progress-striped">
-                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-                          </div>
-                        </div>
-                        <span class="sr-only">20%</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Operating Systems I</td>
-                      <td>K. Smith</td>
-                      <td>TR 5:25-6:40</td>
-                      <td>
-                        <div class="progress thin progress-striped">
-                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100" style="width: 73%">
-                          </div>
-                        </div>
-                        <span class="sr-only">73%</span>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-            </div>
-          </div>
-        </div>
-      </div>
         <!-- statics end -->
       </section>
       <div class="text-right">

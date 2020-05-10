@@ -16,7 +16,13 @@ public class dbcon {
 	public boolean checkAuth() {
         boolean result = false;
         String val = null;
-        String sql = "SELECT COUNT(*) FROM COURSE";
+        String val2 = null;
+        String val3 = null;
+        String val4 = null;
+        String val5 = null;
+        String val6 = null;
+        String val7 = null;
+        String sql = "SELECT * FROM COURSE";
 
         try {
             Class.forName("com.ibm.db2.jcc.DB2Driver");
@@ -32,11 +38,17 @@ public class dbcon {
             con = DriverManager.getConnection(url, DBUSER, DBPASS);
             pstmt = con.prepareStatement(sql);
             rs = pstmt.executeQuery();            
-            
+            System.out.println("Course #...Credits...Name..............................Description...................");
             if (rs != null) {
                 while (rs.next()) {
                     val = rs.getString(1);
-                    System.out.println("Number of courses is " + val );
+                    val2 = rs.getString(2);
+                    val3 = rs.getString(3);
+                    val4 = rs.getString(4);
+                    // val5 = rs.getString(5);
+                    // val6 = rs.getString(6);
+                    // val7 = rs.getString(7);
+                    System.out.println(val + "......."+ val2 + "........." + val3 + ".........."+ val4 );
                 }
             }
             rs.close();
